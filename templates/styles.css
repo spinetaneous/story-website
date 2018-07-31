@@ -6,20 +6,23 @@ body {
 
 /* website title */
 h1 {
-  font-size: 100px;
-  margin-bottom: 10px;
+  font-size: 75px;
+  margin-bottom: 5px;
+  text-decoration: underline;
+  text-decoration-color: red;
 }
 
 /* author name */
 h2 {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 /* each individual link */
 a {
   display: inline-block;
   padding: 5px 20px;
-  outline: solid red 10px;
+  outline: solid red 5px;
+  margin-bottom: 10px;
 }
 
 /* unvisited link */
@@ -44,4 +47,23 @@ a:active {
 
 #links {
   display: inline-block;
+}
+
+#page_text {
+  width: 50%;
+  border: 2px solid red;
+
+  margin: 0 auto;
+}
+
+p {
+  padding: 5px 30px;
+  text-align: justify;
+}
+
+
+#back_button{
+    position:absolute;
+    bottom: 5%;
+    right:20%;
 }
