@@ -1,0 +1,47 @@
+/* everything */
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* website title */
+h1 {
+  font-size: 100px;
+  margin-bottom: 10px;
+}
+
+/* author name */
+h2 {
+  font-size: 50px;
+}
+
+/* each individual link */
+a {
+  display: inline-block;
+  padding: 5px 20px;
+  outline: solid red 10px;
+}
+
+/* unvisited link */
+a:link {
+  color: #000000;
+}
+
+/* visited link */
+a:visited {
+  color: #000000;
+}
+
+/* mouse over link */
+a:hover {
+  color: #777777;
+}
+
+/* link when mouse clicks on it */
+a:active {
+  color: #ff0000;
+}
+
+#links {
+  display: inline-block;
+}
