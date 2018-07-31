@@ -48,7 +48,7 @@ a:active {
 
 #author_container {
   width: 450px;
-  height: 220px;
+  height: 240px;
   border: 2px solid red;
 
   position: absolute;
@@ -60,7 +60,7 @@ a:active {
   margin: auto;
 }
 
-#author_bio {
+.author_bio {
   padding: 2px;
   text-align: center;
   justify-content: center;
