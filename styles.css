@@ -40,6 +40,15 @@ a:hover {
   color: #777777;
 }
 
+p {
+  padding: 5px 30px;
+  text-align: justify;
+}
+
+img {
+  width: 50%;
+}
+
 /* link when mouse clicks on it */
 a:active {
   color: #ff0000;
@@ -55,12 +64,6 @@ a:active {
 
   margin: 0 auto;
 }
-
-p {
-  padding: 5px 30px;
-  text-align: justify;
-}
-
 
 #back_button{
     position:absolute;
