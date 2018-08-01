@@ -2,30 +2,34 @@
 // how can we store our questions?
 const myQuestions = [
   { // question 1
-    question: "Whose team are you on?",
+    question: "Where is 85% of plant life found?",
     answers: {
-      a: "Angie",
-      b: "Jaden"
+      a: "The ocean",
+      b: "The mountains",
+      c: "In forests",
+      d: "In deserts"
     },
     correctAnswer: "a"
   },
   { // question 2
-    question: "Who is the tallest at QUESTABOX?",
+    question: "What is the fastest growing woody plant in the world?",
     answers: {
-      a: "Jylin",
-      b: "Jaden",
-      c: "Yubeen"
+      a: "Bonsai",
+      b: "Redwood tree",
+      c: "Bamboo",
+      d: "Corn"
     },
     correctAnswer: "c"
   },
   { // question 3
-    question: "Who wrote this quiz?",
+    question: "What color were carrots originally?",
     answers: {
-      a: "Batman",
-      b: "A robot",
-      c: "I did!"
+      a: "Orange",
+      b: "Purple",
+      c: "Yellow",
+      d: "Green"
     },
-    correctAnswer: "c"
+    correctAnswer: "b"
   }
 ];
 
