@@ -43,6 +43,11 @@ a:hover {
   background-color: #ffb5b5; /* reddish-pink */
 }
 
+/* link when mouse clicks on it */
+a:active {
+  color: #ff0000;
+}
+
 p {
   padding: 5px 30px;
   text-align: justify;
@@ -50,11 +55,6 @@ p {
 
 img {
   width: 50%;
-}
-
-/* link when mouse clicks on it */
-a:active {
-  color: #ff0000;
 }
 
 #links {
@@ -72,4 +72,39 @@ a:active {
     position:absolute;
     bottom: 5%;
     right:20%;
+}
+
+/* quiz style */
+.question {
+    color: black;
+    font-family: verdana;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.answers {
+    color: black;
+    font-family: verdana;
+    margin-bottom: 20px;
+}
+
+.answers label {
+    display: block;
+}
+
+button {
+    background-color: #ff3f3f; /* less saturated red */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+}
+
+button:hover {
+  background-color: #ffb5b5;
 }
