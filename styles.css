@@ -19,25 +19,28 @@ h2 {
 
 /* each individual link */
 a {
+  text-decoration: none;
   display: inline-block;
-  padding: 5px 20px;
-  outline: solid red 5px;
+  padding: 10px 25px;
   margin-bottom: 10px;
+  border-radius: 12px;
+  background-color: #ff3f3f; /* less saturated red */
 }
 
 /* unvisited link */
 a:link {
-  color: #000000;
+  color: black;
 }
 
 /* visited link */
 a:visited {
-  color: #000000;
+  color: black;
 }
 
 /* mouse over link */
 a:hover {
-  color: #777777;
+  color: #777777; /* gray */
+  background-color: #ffb5b5; /* reddish-pink */
 }
 
 p {

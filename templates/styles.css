@@ -19,25 +19,37 @@ h2 {
 
 /* each individual link */
 a {
+  text-decoration: none;
   display: inline-block;
-  padding: 5px 20px;
-  outline: solid red 5px;
+  padding: 10px 25px;
   margin-bottom: 10px;
+  border-radius: 12px;
+  background-color: #ff3f3f; /* less saturated red */
 }
 
 /* unvisited link */
 a:link {
-  color: #000000;
+  color: black;
 }
 
 /* visited link */
 a:visited {
-  color: #000000;
+  color: black;
 }
 
 /* mouse over link */
 a:hover {
-  color: #777777;
+  color: #777777; /* gray */
+  background-color: #ffb5b5; /* reddish-pink */
+}
+
+p {
+  padding: 5px 30px;
+  text-align: justify;
+}
+
+img {
+  width: 50%;
 }
 
 /* link when mouse clicks on it */
@@ -55,12 +67,6 @@ a:active {
 
   margin: 0 auto;
 }
-
-p {
-  padding: 5px 30px;
-  text-align: justify;
-}
-
 
 #back_button{
     position:absolute;
