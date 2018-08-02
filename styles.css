@@ -25,6 +25,7 @@ a {
   margin-bottom: 10px;
   border-radius: 12px;
   background-color: #ff3f3f; /* less saturated red */
+  transition-duration: 0.4s;
 }
 
 /* unvisited link */

@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<!-- the words at the top of the page -->
+<div id="page_top">
+  <h1>The Little Seed</h1>
+  <h2>by Dr. Bob Burger XIV</h2>
+</div>
+
+<!-- the links below the title & author name -->
+<div id="links">
+  <a href="homepage.html">Home</a>
+  <a href="author.html">About the Author</a>
+  <a href="characters.html">Characters</a>
+  <a href="story.html">Story</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="games.html">Games</a>
+  <!-- can add more tabs here -->
+</div>
+
+<div id="page_text">
+  <h1>Let's play Hangman!</h1>
+	<p>Your guesses:</p>
+	<p>
+	<script>
+    	//create an array of random words--the kids can pick their own words (and they can have as many as they want)
+		var words = ["javascript", "monkey", "amazing", "pancake"];
+
+        //pick a random word from the array
+		var word = words[Math.floor(Math.random() * words.length)];
+
+        //set up the answer array, putting underscores in place of the unknown letters
+		var answerArray = [];
+        for(var i = 0; i < word.length; i++) {
+			answerArray[i] = "_";
+		}
+        var remainingLetters = word.length;
+
+        //challenge: make a variable to hold the number of times you guess incorrectly
+		var wrongGuesses = 0;
+
+        //challenge: make a boolean variable to determine if the letter you guess is in the word
+		var found = false;
+
+		//The game loop: this loop repeats until you have no letters left or you guess wrong 8 times
+		while(remainingLetters > 0 && wrongGuesses < 8) {
+        	//show the player their progress
+			alert(answerArray.join(" "));
+
+            //get a guess from the player
+			var guess = prompt("Guess a letter, or click Cancel to stop playing.");
+			if(guess === null) {
+				break; //exit the game loop
+			}
+			else if(guess.length !== 1) {
+				alert("Please enter a single letter.");
+			}
+			else {
+				document.write(guess);
+				found = false;
+                //update the state of the answerArray with their guess (if it is correct)
+				for(var j = 0; j < word.length; j++) {
+					if(word[j] === guess) {
+						answerArray[j] = guess;
+						remainingLetters--;
+						found = true;
+					}
+				}
+                //if their guess is incorrect, tell the player to guess again
+				if(found === false) {
+					alert("That letter is not in the word. Guess again.");
+                    //increment the number of wrong guesses
+					wrongGuesses++;
+				}
+			}
+		}
+
+        //they win if there are no remaining letters
+		if(remainingLetters === 0) {
+			alert(answerArray.join(" "));
+			alert("Good job! The answer was " + word);
+		}
+
+        //they lose if they guess incorrectly too many times
+		if(wrongGuesses === 8) {
+			alert("You have no more guesses left. You lose.");
+		}
+	</script>
+	</p>
+	<p><img src="http://www.sightwordsgame.com/wp-content/uploads/2011/11/Hangman.jpg" alt="Hangman"></p>
+</div>
+</body>
+</html>
